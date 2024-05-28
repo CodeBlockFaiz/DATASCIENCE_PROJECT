@@ -1,0 +1,107 @@
+{% extends "nav.html" %}
+{% block content %}
+{% load static %}
+<div class="container search-container">
+    <h1 class="text-center">Enter your car number</h1>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" action="predict" placeholder="Eg. KA12EY1342" aria-label="Search for cars..." aria-describedby="search-button">
+        <div class="input-group-append">
+            <input type="submit" class="btn btn-primary"  id="search-button" value="Get CAR Price"  >
+        </div>
+    </div>
+</div>
+<h1 class="text-center">Or <br> Start with your car brand</h1>
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-4 car-card">
+            <div class="card">
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/558/266/desktop-wallpaper-mercedes-benz-logo-mercedes-logo-thumbnail.jpg">
+                <div class="card-body">
+                </div>
+            </div>
+        </div><br>
+        <div class="col-md-4 car-card">
+            <div class="card">
+                <img src="https://wallpapers.com/images/hd/bmw-logo-pictures-1vpyk0cc3rcxcuyk.jpg" class="card-img-top" alt="Car 1" height="250" width="250">
+                <div class="card-body">
+                </div>
+            </div>
+        </div><br>
+        <div class="col-md-4 car-card">
+            <div class="card">
+                <img src="https://wallpaperaccess.com/full/916624.jpg" class="card-img-top" alt="Car 1" height="250" width="250" >
+                <div class="card-body">
+                </div>
+            </div>
+        </div><br>
+        <div class="col-md-4 car-card">
+            <div class="card">
+                <img src="https://i.pinimg.com/originals/7f/3a/fb/7f3afb88712a75ef397ae98968a72a1c.jpg" class="card-img-top" alt="Car 1" height="250" width="250">
+                <div class="card-body">
+                </div>
+            </div>
+        </div><br>
+        <div class="col-md-4 car-card">
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/020/927/321/original/volkswagen-logo-brand-car-symbol-with-name-white-design-german-automobile-illustration-with-black-background-free-vector.jpg" class="card-img-top" alt="Car 1" height="250" width="250">
+                <div class="card-body">
+                </div>
+            </div>
+        </div><br>
+        <div class="col-md-4 car-card">
+            <div class="card">
+                <img src="https://1000logos.net/wp-content/uploads/2018/02/Symbol-Ford.jpg" class="card-img-top" alt="Car 1" height="250" width="250">
+                <div class="card-body">
+                </div>
+            </div>
+        </div><br>
+        <div class="col-md-4 car-card">
+            <div class="card">
+                <img src="https://e0.pxfuel.com/wallpapers/821/664/desktop-wallpaper-toyota-logo-black-toyota.jpg" class="card-img-top" alt="Car 1" height="250" width="250">
+                <div class="card-body">
+                </div>
+            </div>
+        </div><br>
+        <div class="col-md-4 car-card">
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/020/927/160/non_2x/skoda-brand-logo-car-symbol-with-name-green-and-white-design-czech-automobile-illustration-with-black-background-free-vector.jpg" class="card-img-top" alt="Car 1" height="250" width="250">
+                <div class="card-body">
+                </div>
+            </div>
+        </div><br>
+        <div class="col-md-4 car-card">
+            <div class="card">
+                <img src="https://www.sagmart.com/uploads/2014/09/22/news_image1/mahindra_logo-resize.jpg" class="card-img-top" alt="Car 1" height="250" width="250">
+                <div class="card-body">
+                </div>
+            </div>
+        </div><br>
+        <div class="col-md-4 car-card">
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/020/499/812/original/hyundai-logo-brand-symbol-with-name-white-design-south-korean-car-automobile-illustration-with-black-background-free-vector.jpg" class="card-img-top" alt="Car 1" height="250" width="250">
+                <div class="card-body">
+                </div>
+            </div>
+        </div><br>
+        <div class="col-md-4 car-card">
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/020/927/123/original/suzuki-logo-brand-car-symbol-with-name-white-design-japan-automobile-illustration-with-black-background-free-vector.jpg" class="card-img-top" alt="Car 1" height="250" width="250">
+                <div class="card-body">
+                </div>
+            </div>
+        </div><br>
+        <div class="col-md-4 car-card">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/69/01/9b/69019bcc3cee8bacbd683c6aba81c3b3.jpg" class="card-img-top" alt="Car 1" height="250" width="250">
+                <div class="card-body">
+                </div>
+            </div>
+        </div><br>
+      
+
+        <!-- Add more cars here -->
+    </div>
+</main>
+
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+{% endblock %}

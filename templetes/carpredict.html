@@ -1,0 +1,51 @@
+{% extends "nav.html" %}
+{% block content %}
+{% load static %}
+<style>
+  .boxed-form {
+      border: 2px solid #191919;
+      padding: 20px;
+      border-radius: 10px;
+      width: 50%;
+  }
+</style>
+<body>
+    <div class="testbox">
+    <form action="predict" method="post" >
+      <div class="center-banner">
+        <h1 align="center"> Price Prediction </h1>
+      </div>
+      <br/>
+      <fieldset>
+        <legend align="center">Enter The Details</legend>
+{% csrf_token %}
+        <div class="colums">
+          <div class="item" align="center">
+            <label><b>Car Name</b></label><br>
+            <input type="text" placeholder="Enter name" name="name"  required>
+          </div>
+          
+          <div class="item" align="center">
+             <label><b>Year</b></label><br>
+            <input type="text"  placeholder="Enter year" name="year" required>
+          </div>
+          
+          <div class="item" align="center">
+            <label><b>Kilometer Driven</b></label><br>
+            <input type="text" placeholder="kilometer driven" name="km_driven" required>
+          </div>
+          
+          <div class="item" align="center">
+            <label><b>Fuel Type</b></label><br>
+            <input type="text" placeholder="Enter fuel type" name="fuel" required>
+          </div>
+        </div>
+        <br/>
+      </fieldset>
+            <div class="btn-block" align="center">
+      <button type="submit">Predict  Price</button>
+      </div>
+    </form>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    {% endblock %}

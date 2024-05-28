@@ -1,0 +1,56 @@
+{% extends "nav.html" %}
+{% block content %}
+{% load static %}
+<style>
+  .boxed-form {
+      border: 2px solid #191919;
+      padding: 20px;
+      border-radius: 10px;
+      width: 50%;
+  }
+</style>
+  <body>
+    <div class="testbox">
+  <center>
+    <form action="carpredict" method="post" class="boxed-form">
+      <div class="banner">
+        <h1 align="center"> Price Prediction </h1>
+      </div>
+      <br/>
+      <fieldset>
+        <legend align="center">Enter The Details</legend>
+{% csrf_token %}
+        <div class="colums">
+          <div class="item" align="center">
+            <label><b>Car Name</b></label><br>
+            <input type="text" name="name" placeholder="{{name}}"  readonly>
+          </div>
+          <div class="item" align="center">
+             <label><b>Year</b></label><br>
+            <input type="number"  name="year" placeholder="{{year}}"  readonly>
+          </div>
+          <div class="item" align="center">
+            <label><b>Kilometer Driven </b></label><br>
+            <input type="text" name="km_driven" placeholder="{{km_driven}}" readonly>
+          </div>
+          <div class="item" align="center">
+            <label><b>Fuel Type</b></label><br>
+            <input type="text" name="fuel" placeholder="{{fuel}}" readonly>
+          </div> 
+          </div><br>
+          <div class="item" align="center">
+            <label><b>Predicted Price</b></label><br>
+            <input type="text" name="fuel" placeholder="{{selling_price}}" readonly>
+          </div> 
+        </div>
+        <br>
+      </fieldset>
+            <div class="btn-block" align="center">
+      <button type="submit">Logout</button>
+            
+      </div>
+    </form>
+  </center>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    {% endblock %}
