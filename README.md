@@ -1,3 +1,3 @@
 # Automobile Price Estimation Using Linear Regression Algorithm
 
-Worked Under TechCiti Technologies PVT Ltd.
+Developed  Under TechCiti Software Consulting  PVT Ltd.
